@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MapActivity">
+
+   <fragment
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/google_map"
+       android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+   <TextView
+       android:layout_width="100dp"
+       android:layout_height="80dp"
+      android:id="@+id/tv_normal"
+      android:text="Map"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      android:textColor="@color/cardview_dark_background"
+      android:textAlignment="center"
+      android:background="@drawable/map_aeroport"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="20dp"
+      android:layout_marginBottom="30dp"/>
+
+   <TextView
+       android:layout_width="100dp"
+       android:layout_height="80dp"
+       android:id="@+id/tv_satellite"
+       android:text="Satellite"
+       android:textSize="25sp"
+       android:textStyle="bold"
+       android:textColor="@color/cardview_light_background"
+       android:textAlignment="center"
+       android:background="@drawable/map_aeroport_satellite"
+       android:layout_alignParentBottom="true"
+       android:layout_marginStart="20dp"
+       android:layout_marginBottom="30dp"/>
+
+  <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:src="@drawable/"
+      android:id="@+id/btn"
+      />-->
+  <!--  <ProgressBar
+        android:id="@+id/routeLoadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        mapbox:layout_anchor="@id/fabStyles"
+        mapbox:layout_anchorGravity="top|center">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabRemoveRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            mapbox:backgroundTint="@color/red"
+            mapbox:srcCompat="@drawable/ic_cancel"/>
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabStyles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:tint="@android:color/white"
+        mapbox:backgroundTint="@color/colorAccent"
+        mapbox:srcCompat="@drawable/ic_layers"/> -->
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragment.Airport1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+            >
+
+        <TextView
+            android:id="@+id/codeAirport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CDG"
+            android:textSize="20sp"
+
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/codeCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VFR"
+            android:background="@drawable/rectangle"
+            android:textSize="16sp"
+            android:layout_marginLeft="250dp"
+            android:textColor="@color/mapboxWhite"
+            />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/nameCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FRANCE"
+        android:textSize="14sp"
+        android:layout_below="@+id/layout1"
+        android:layout_marginLeft="20dp"
+        />
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameCountry">
+
+       <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12h30UTC"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_toRightOf="@id/hour"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sun"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idPisteLayout"
+        android:layout_below="@+id/layout2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorGray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RUNWAY"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/runwayVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="31"
+            android:layout_marginLeft="250dp"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout3"
+        android:layout_below="@+id/idPisteLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorGray">
+
+        <RelativeLayout
+            android:id="@+id/group1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Threshold"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/thresholdVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAMP\nMid runway: DAMP\nRoll out: ICE"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="25dp"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/group2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group1"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M.DThreshold"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/DThresholdval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20mm\nMid runway: 4mm\nRoll out: 8mm"
+                android:layout_marginLeft="200dp"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/group3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group2"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B.AThreshold"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/AThresholdval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MEDIUM TO GOOD\nMid runway: MEDIUM\nRoll Out: GOOD\nInstrument: Grip tester"
+                android:layout_marginLeft="200dp"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TaxiwayD"
+        android:layout_below="@+id/layout3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorGray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TaxiwayD"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/taxiwayDval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DRY SNOW"
+            android:layout_marginLeft="200dp"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true">
+        <Button
+            android:id="@+id/btnRaw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RAW"
+            android:textColor="@color/mapboxWhite"
+            android:background="@drawable/circle"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/circle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true">
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/map_image"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

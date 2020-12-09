@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SNOWTAMProject</string>
+    <string name="Title">SNOWTAM</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZGVjaW0iLCJhIjoiY2pwbXQzZ3BqMDByODQyb2U2dDllcnFkMSJ9.oyHqnguPqm6INt8nFA3ugg</string>
+    <string name="map_key" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
